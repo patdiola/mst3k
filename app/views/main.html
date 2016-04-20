@@ -1,0 +1,93 @@
+<header>
+  <!-- Show header image. -->
+</header>
+
+<div id="intro" class="row">
+  <img id="the-early-days" src="img/the_early_days.png" />
+
+  <span class="main-heading">MST3K</span>
+
+  <p>In the not-too-distant future, next Sunday,<br class="breakpoint breakpoint-sm" /> AD<br class="breakpoint breakpoint-lg" /> There was a man. There were some<br class="breakpoint breakpoint-sm" /> puppets. It was amazing.<br class="breakpoint breakpoint-lg" /> These are the<br class="breakpoint breakpoint-sm" /> experiments of the SOL.</p>
+
+  <div id="greetings">
+    <img id="the-early-days" src="img/greetings.png" ng-click="startMainVideo()" />
+    <div id="player"></div>
+  </div>
+
+  <div id="look">
+    <img src="img/look_what_we_found.png"/>
+  </div>
+</div>
+
+<div id="exhibits" class="row">
+  <section id="{{exhibit.id}}" ng-repeat="exhibit in exhibits">
+    <div class="text-block" ng-click="openVideoModal(exhibit.videoId)">
+      <h2>{{exhibit.copy}}</h2>
+      <a>EXPLORE</a>
+    </div>
+  </section>
+  <div class="clear"></div>
+</div>
+
+<footer>
+  <div class="row">
+    <div id="social-big-wrapper">
+      <div id="social-big">
+        <a id="social-big-facebook" href="javascript:void(0)"></a>
+        <a id="social-big-twitter" href="javascript:void(0)"></a>
+        <a id="social-big-google" href="javascript:void(0)"></a>
+        <a id="social-big-pintrest" href="javascript:void(0)"></a>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div id="back-to-top-wrapper">
+      <a id="back-to-top" href="javascript:void(0)" ng-click="backToTop()">Back to Top</a>
+    </div>
+
+    <div id="options">
+      <div class="options-item">
+        <a class="option option-help" href="javascript:void(0)"><span>Help</span></a>
+      </div>
+      <div class="options-item">
+        <a class="option option-privacy" href="javascript:void(0)"><span>Privacy & Terms</span></a>
+      </div>
+      <div class="options-item">
+        <a id="option-language-dropdown-wrapper" class="option option-language" href="javascript:void(0)" ng-click="chooseLanguage()">
+          <span>English</span>
+
+          <ul id="option-language-dropdown">
+            <li>Klingon</li>
+            <li>Dothraki</li>
+            <li>Shyriiwook</li>
+          </ul>
+          <div class="clear"></div>
+        </a>
+      </div>
+      <div class="clear"></div>
+    </div>
+
+    <div id="social-small-wrapper">
+      <div id="social-small">
+        <span>Follow us on:</span>
+        <a id="social-small-google"  href="javascript:void(0)"></a>
+        <a id="social-small-blogger" href="javascript:void(0)"></a>
+        <a id="social-small-twitter" href="javascript:void(0)"></a>
+        <a id="social-small-youtube" href="javascript:void(0)"></a>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</footer>
+
+<div class="video-modal" ng-show="showModal" ng-click="closeVideoModal()">
+  <div class="video-modal-inner">
+    <div class="video-modal-close">
+      <div>Close</div>
+    </div>
+    <div class="video-container"></div>
+  </div>
+</div>

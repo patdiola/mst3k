@@ -1,0 +1,28 @@
+@import "variables.scss";
+
+html {
+  font-family: 'Roboto-Light', 'helvetica', 'arial', 'sans-serif';
+}
+
+h1 {
+  font-family: 'Denne-Sketchy', 'helvetica', 'arial', 'sans-serif';
+  font-size: $fontsize-xl;
+}
+
+h2 {
+  font-family: 'RobotoSlab-Thin', 'helvetica', 'arial', 'sans-serif';
+  font-size: 45px;
+  line-height: $fontsize-lg;
+}
+
+a, a:active, a:visited, a:hover {
+  color: #4285F4;
+  font-family: 'Roboto-Medium', 'helvetica', 'arial', 'sans-serif';
+  font-size: $fontsize-md;
+}
+
+.main-heading {
+  font-family: 'Denne-Sketchy', 'helvetica', 'arial', 'sans-serif';
+  font-size: $fontsize-xl;
+  letter-spacing: .8px;
+}

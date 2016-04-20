@@ -1,0 +1,72 @@
+@import "variables.scss";
+
+#intro {
+  text-align: center;
+
+  p {
+    max-width: 900px;
+    font-family: 'Roboto-Thin', 'helvetica', 'arial', 'sans-serif';
+    font-size: $fontsize-md-lg;
+    color: $color-grey-dark;
+    line-height: 48px;
+    letter-spacing: -.1px;
+    padding-right: $pad-md;
+    padding-left: $pad-md;
+    margin: auto;
+    margin-top: 37px;
+    margin-bottom: 60px;
+
+    .breakpoint {
+      display: none;
+    }
+  }
+
+  #the-early-days {
+    margin: auto;
+    margin-top: 42px;
+    margin-bottom: 2px;
+  }
+
+  #greetings {
+    position: relative;
+    background-color: $color-black;
+    cursor: pointer;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: auto;
+      height: 100%;
+    }
+  }
+
+  #look {
+    img {
+      margin: 57px auto;
+      max-width: 90%;
+    }
+  }
+}
+
+@media only screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+  #intro {
+    p {
+      .breakpoint-sm {
+        display: block;
+        clear: both;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $breakpoint-lg) {
+  #intro {
+    p {
+      .breakpoint-lg {
+        display: block;
+        clear: both;
+      }
+    }
+  }
+}

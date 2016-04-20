@@ -1,0 +1,284 @@
+@import "variables.scss";
+
+footer {
+  font-family: 'Roboto-Light', 'helvetica', 'arial', 'sans-serif';
+  color: $color-grey-darker;
+  font-size: 22px;
+
+  a {
+    font-family: 'Roboto-Light', 'helvetica', 'arial', 'sans-serif';
+    color: $color-grey-darker;
+    text-decoration: none;
+  }
+
+  a:hover {
+    font-family: 'Roboto-Light', 'helvetica', 'arial', 'sans-serif';
+    color: $color-brand-main;
+  }
+
+  #social-big-wrapper {
+    text-align: center;
+    padding: 32px 0px;
+    background-color: $color-brand-main;
+  }
+
+  #social-big {
+    display: inline-block;
+
+    a {
+      display: block;
+      width: 80px;
+      height: 80px;
+      margin-right: 70px;
+      float: left;
+      background: url(../img/social_large_sprite.png) no-repeat 0px 0px transparent;
+    }
+
+    a:last-of-type {
+      margin-right: 0px;
+    }
+
+    #social-big-facebook {
+      background-position: 0px 0px;
+    }
+
+    #social-big-twitter {
+      background-position: -80px 0px;
+    }
+
+    #social-big-google {
+      background-position: -160px 0px;
+    }
+
+    #social-big-pintrest {
+      background-position: -240px 0px;
+    }
+  }
+
+  #back-to-top-wrapper {
+    /* Use a wrapper to help with vertically aligning the text. */
+    height: 140px;
+    position: relative;
+    transform-style: preserve-3d;
+  }
+
+  #back-to-top {
+    text-align: right;
+    text-decoration: none;
+    padding-right: $pad-lg;
+    margin-right: $pad-lg;
+    background: url(../img/chevron_up.png) no-repeat right 6px transparent;
+
+    /* Help with vertical alignment. */
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  #back-to-top:hover {
+    background-position: right -79px;
+  }
+
+  #options, #social-small-wrapper {
+    background-color: $color-grey-light;
+    padding: $pad-lg;
+  }
+
+  #options {
+    .options-item {
+      float: left;
+      width: 25%;
+    }
+
+    .options-item:nth-child(2) {
+      width: 50%;
+      text-align: center;
+    }
+
+    .options-item:nth-child(3) {
+      text-align: right;
+    }
+
+    .option {
+      span {
+        line-height: 40px;
+        padding-top: $pad-sm;
+        padding-bottom: $pad-sm;
+      }
+    }
+
+    .option-help {
+      span {
+        text-align: left;
+        padding-left: 60px;
+        background: url(../img/help.png) no-repeat 0px 12px transparent;
+      }
+
+      span:hover {
+        background-position: 0px -62px;
+      }
+    }
+
+    .option-language {
+      position: relative;
+    }
+
+    .option-language span {
+      padding-right: $pad-lg;
+      background: url(../img/caret_down.png) no-repeat right 32px transparent;
+    }
+
+    .option-language:hover span {
+      background-position: right -77px;
+    }
+
+    #option-language-dropdown {
+      display: none;
+      position: absolute;
+      top: $pad-lg;
+      right: 0px;
+      width: 100%;
+      max-width: 200px;
+      background-color: #FFF;
+      text-align: left;
+      margin: 0px;
+      padding: 0px;
+      font-size: .8em;
+      box-shadow: 1px 1px 2px 0px $color-grey-darker;
+
+      li {
+        padding: $pad-xxs $pad-xs;
+        cursor: pointer;
+      }
+
+      li:hover {
+        color: $color-white;
+        background-color: $color-brand-main;
+      }
+    }
+
+    #option-language-dropdown.open {
+      display: block;
+      margin-bottom: $pad-lg;
+    }
+  }
+
+  #social-small {
+    float: left;
+
+    span {
+      display: block;
+      float: left;
+      line-height: 40px;
+      padding-right: $pad-lg;
+    }
+
+    a {
+      display: block;
+      width: $pad-lg;
+      height: $pad-lg;
+      margin-right: 37px;
+      float: left;
+      background: url(../img/social_small_sprite.png) no-repeat 0px 0px transparent;
+    }
+
+    #social-small-google {
+      background-position: 0px 0px;
+    }
+
+    #social-small-google:hover {
+      background-position: 0px -40px;
+    }
+
+    #social-small-blogger {
+      background-position: -40px 0px;
+    }
+
+    #social-small-blogger:hover {
+      background-position: -40px -40px;
+    }
+
+    #social-small-twitter {
+      background-position: -80px 0px;
+    }
+
+    #social-small-twitter:hover {
+      background-position: -80px -40px;
+    }
+
+    #social-small-youtube {
+      background-position: -120px 0px;
+    }
+
+    #social-small-youtube:hover {
+      background-position: -120px -40px;
+    }
+  }
+}
+
+@media only screen and (max-width: $breakpoint-sm) {
+  footer {
+    #social-big {
+      a {
+        margin-right: 0px;
+      }
+    }
+
+    #options {
+      .options-item, .options-item:nth-child(2), .options-item:nth-child(3) {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-bottom: $pad-sm;
+      }
+    }
+
+    #social-small-wrapper {
+      text-align: center;
+      padding-top: 0;
+    }
+
+    #social-small {
+      display: inline-block;
+      float: none;
+
+      span {
+        display: none;
+      }
+
+      a:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $breakpoint-lg) {
+  footer {
+    #back-to-top-wrapper {
+      display: none;
+    }
+
+    #options, #social-small-wrapper {
+      float: left;
+      width: 50%;
+    }
+
+    #social-small {
+      float: right;
+    }
+
+    #options {
+      .options-item, .options-item:nth-child(2), .options-item:nth-child(3) {
+        width: auto;
+        margin-right: $pad-sm;
+      }
+
+      #option-language-dropdown {
+        top: auto;
+        bottom: 0;
+      }
+    }
+  }
+}

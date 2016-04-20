@@ -1,0 +1,95 @@
+@import "variables.scss";
+
+#exhibit-1 {
+  background-image: url(../img/exhibit_1_600.png);
+}
+
+#exhibit-2 {
+  background-image: url(../img/exhibit_2_600.png);
+}
+
+#exhibit-3 {
+  background-image: url(../img/exhibit_3_600.png);
+}
+
+#exhibits {
+  section {
+    position: relative;
+    margin-bottom: $pad-sm;
+
+    a {
+      padding-right: $pad-md;
+      background: url(../img/arrow_right.png) no-repeat right center transparent;
+    }
+  }
+}
+
+#exhibits {
+  section {
+    .text-block {
+      width: 80%;
+      max-width: 370px;
+      position: absolute;
+      left: 55px;
+      bottom: 48px;
+      padding: $pad-sm;
+      cursor: pointer;
+      transition: background-color 500ms ease-out;
+
+      h2 {
+        margin-top: 0px;
+        margin-bottom: 28px;
+        color: $color-white;
+        letter-spacing: -.5px;
+      }
+    }
+
+    .text-block:hover {
+      background-color: $transparent-black;
+    }
+  }
+
+  section:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-sm) {
+  #exhibits {
+    section {
+      .text-block {
+        min-width: 400px;
+        bottom: 10px;
+        left: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $breakpoint-lg) {
+  #exhibits {
+    section {
+      float: left;
+      width: 33.3333%;
+      border-right: $pad-sm solid $color-white;
+    }
+
+    section:last-of-type {
+      border-right: 0 solid transparent;
+    }
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  #exhibit-1 {
+    background-image: url(../img/exhibit_1_retina.png);
+  }
+
+  #exhibit-2 {
+    background-image: url(../img/exhibit_2_retina.png);
+  }
+
+  #exhibit-3 {
+    background-image: url(../img/exhibit_3_retina.png);
+  }
+}
