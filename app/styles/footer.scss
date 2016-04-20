@@ -31,7 +31,7 @@ footer {
       height: 80px;
       margin-right: 70px;
       float: left;
-      background: url(../img/social_large_sprite.png) no-repeat 0px 0px transparent;
+      background: url(../images/social_large_sprite.png) no-repeat 0px 0px transparent;
     }
 
     a:last-of-type {
@@ -67,7 +67,7 @@ footer {
     text-decoration: none;
     padding-right: $pad-lg;
     margin-right: $pad-lg;
-    background: url(../img/chevron_up.png) no-repeat right 6px transparent;
+    background: url(../images/chevron_up.png) no-repeat right 6px transparent;
 
     /* Help with vertical alignment. */
     display: block;
@@ -112,7 +112,7 @@ footer {
       span {
         text-align: left;
         padding-left: 60px;
-        background: url(../img/help.png) no-repeat 0px 12px transparent;
+        background: url(../images/help.png) no-repeat 0px 12px transparent;
       }
 
       span:hover {
@@ -126,7 +126,7 @@ footer {
 
     .option-language span {
       padding-right: $pad-lg;
-      background: url(../img/caret_down.png) no-repeat right 32px transparent;
+      background: url(../images/caret_down.png) no-repeat right 32px transparent;
     }
 
     .option-language:hover span {
@@ -180,7 +180,7 @@ footer {
       height: $pad-lg;
       margin-right: 37px;
       float: left;
-      background: url(../img/social_small_sprite.png) no-repeat 0px 0px transparent;
+      background: url(../images/social_small_sprite.png) no-repeat 0px 0px transparent;
     }
 
     #social-small-google {

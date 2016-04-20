@@ -1,15 +1,15 @@
 @import "variables.scss";
 
 #exhibit-1 {
-  background-image: url(../img/exhibit_1_600.png);
+  background-image: url(../images/exhibit_1_600.png);
 }
 
 #exhibit-2 {
-  background-image: url(../img/exhibit_2_600.png);
+  background-image: url(../images/exhibit_2_600.png);
 }
 
 #exhibit-3 {
-  background-image: url(../img/exhibit_3_600.png);
+  background-image: url(../images/exhibit_3_600.png);
 }
 
 #exhibits {
@@ -19,7 +19,7 @@
 
     a {
       padding-right: $pad-md;
-      background: url(../img/arrow_right.png) no-repeat right center transparent;
+      background: url(../images/arrow_right.png) no-repeat right center transparent;
     }
   }
 }
@@ -81,14 +81,14 @@
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   #exhibit-1 {
-    background-image: url(../img/exhibit_1_retina.png);
+    background-image: url(../images/exhibit_1_retina.png);
   }
 
   #exhibit-2 {
-    background-image: url(../img/exhibit_2_retina.png);
+    background-image: url(../images/exhibit_2_retina.png);
   }
 
   #exhibit-3 {
-    background-image: url(../img/exhibit_3_retina.png);
+    background-image: url(../images/exhibit_3_retina.png);
   }
 }
