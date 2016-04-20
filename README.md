@@ -5,8 +5,14 @@ version 0.11.1.
 
 ## Build & development
 
-Run `grunt` for building and `grunt serve` for preview.
+Make sure to install Compass (SASS)
+
+Run 'npm install'
+Run 'bower install'
+
+For development mode, run 'grunt serve'.
+To build for production, run 'grunt build'. The assets will build to the 'dist' directory.
 
 ## Testing
 
-Running `grunt test` will run the unit tests with karma.
+Running 'grunt test' will run the unit tests with karma.
