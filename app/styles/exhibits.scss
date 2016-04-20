@@ -73,8 +73,12 @@
       border-right: $pad-sm solid $color-white;
     }
 
+    section:first-of-type {
+      border-left: $pad-sm solid $color-white;
+    }
+
     section:last-of-type {
-      border-right: 0 solid transparent;
+      border-right: $pad-sm solid $color-white;
     }
   }
 }
